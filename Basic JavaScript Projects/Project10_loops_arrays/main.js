@@ -9,3 +9,16 @@ function Call_Loop() {
         blueCount++;
     }
 }
+
+function array_Function() {
+    var dogNames = ["Spot","Rufus","Fluffy"];
+    document.getElementById("Array").innerHTML = "You could name your dog " + dogNames[2];
+}
+
+const Lhyrine = {class:"Druid", subclass:"Moon"}
+function constant_function() {
+    Lhyrine.subclass = "Land";
+    Lhyrine.pet = "Wolf";
+    Lhyrine = "A moon druid";
+    document.getElementById("Constant").innerHTML = Lhyrine;
+}
