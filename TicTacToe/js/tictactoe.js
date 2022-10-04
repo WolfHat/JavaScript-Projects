@@ -8,7 +8,7 @@ function placeXorO(squareNumber) {
     //This condition ensures a square hasn't been selected already.
     //The .some() method is used to check each element of selectedSquare array to
     //see if it contains the square numver clicked on.
-    if (!selectedSquares.some(element => element.includes(squaresNumber))) {
+    if (!selectedSquares.some(element => element.includes(squareNumber))) {
         //This cariable retrieves the html element id that was clicked.
         let select = document.getElementById(squareNumber);
         //This condition checks who's turn it is.
@@ -62,7 +62,7 @@ function placeXorO(squareNumber) {
                 placeXorO(pickASquare);
                 //This changes our boolean and ends the loop
                 success = true;
-            }
+            };
         }
     }
 }
@@ -121,4 +121,20 @@ function checkWinConditions() {
         //returned and our if condition executes the drawWinLine function
         if (a === true && b === true && c === true) {return true;}
     }
+}
+
+//This function makes our body element temporarily unclickable
+function disableClick() {
+    //This makes our body unclickable
+    body.style.pointEvents = 'none';
+    //This makes our body clickable again after 1 second
+    setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
+}
+
+//This function takes a string parameter of the path you set earlier for placement sound ('./media/place.mp3')
+function Audio(audioURL) {
+    //We create a new audio object and we pass the path as a parameter
+    let audio = new Audio(audioURL);
+    //Play method plays our audio sound
+    audio.play();
 }
