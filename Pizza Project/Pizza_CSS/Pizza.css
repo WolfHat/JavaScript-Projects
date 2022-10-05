@@ -1,5 +1,5 @@
 #menuBG {
-    width:400px;
+    width:600px;
     height:470px;
     margin: 10px auto;
 }
@@ -9,6 +9,7 @@ body {
 }
 
 h1 {
+    margin: auto;
     color: lightgoldenrodyellow;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -24,12 +25,13 @@ div {
 }
 
 #frmMenu {
-    width: 400px;
+    margin: auto;
+    width: 600px;
     height: 200px;
 }
 
 #totalPrice {
-    width: 200px;
+    width: 300px;
     height: 190px;
     margin: 0 auto;
     float: right;
@@ -41,10 +43,16 @@ div {
     float: left;
 }
 
+.center {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
 .right {
     width: 200px;
     height: 200px;
-    float: right;
+    float: left;
 }
 
 #showText {
@@ -57,7 +65,7 @@ div {
 #cart {
     top: 0;
     margin: 0px auto;
-    width: 400px;
+    width: 600px;
     height: 200px;
 }
 
