@@ -21,7 +21,14 @@
                     </div>\
                 </body>"
             );
+            $('#1').hide();
             $("#2").css({"color":"red"});
+            $("#3").click(function() {
+                $('h1').hide();
+            });
+            $("body").keypress(function() {
+                $('#1').slideDown("slow");
+            });
         });
     </script>
 
